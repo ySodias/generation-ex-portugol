@@ -1,0 +1,95 @@
+programa
+{
+/*	============ 1 ===========	
+ 	// Variáveis
+	
+real peso, excesso, multa
+	const inteiro regulamento = 50
+*/	
+/*	============ 2 ==========
+  	// Variáveis
+	cadeia nome
+	inteiro c, n, salario_total, salario_excedente, horas_trabalhadas, excesso
+	const inteiro salario_hora = 10, excesso_trabalho = 50, valor_hora_excedente = 20
+*/	
+/* 	============ 3 ===========	
+  	// Variáveis
+	inclua biblioteca Matematica --> mat
+	real n1, n2, n3, n4, valor1, valor2, valor3, valor4
+*/
+	funcao inicio()
+
+
+	{
+/* ============ 1 ===========		
+ 		//input values
+ 		escreva("Digite o peso em quilos dos tomates: ")
+		leia(peso)
+
+		//condição
+		se (peso > regulamento){
+			
+			excesso =  (peso - regulamento)
+			multa = excesso*4
+			escreva("O peso foi de ",peso, " Kg foi excedido em ", excesso, " Kg portanto deve pagar a multa de ",multa," R$")
+			}
+		senao {
+			excesso = 0.00
+			multa = 0.00
+			escreva("O peso de tomates no valor de ",peso," Kg e excedeu o peso em ",excesso, " Kg, logo a multa a pagar é ",multa," R$") 
+			}
+*/
+/* ============ 2 ===========	
+		//input values
+		escreva("Digite o nome do trabalhador: \n")
+		leia(nome)
+		escreva("Digite  o código do trabalhador: \n")
+		leia(c)
+		escreva("Digite o registo do trabalhador: \n")
+		leia(n)
+		escreva("Informe as horas, que o trabalhador ",nome,", trabalhou no mês \n")
+		leia(horas_trabalhadas)
+
+
+		se (horas_trabalhadas > excesso_trabalho){
+
+			salario_total = excesso_trabalho * salario_hora
+			excesso = horas_trabalhadas - excesso_trabalho
+			salario_excedente = excesso * valor_hora_excedente
+			salario_total = salario_total + salario_excedente
+
+			escreva("O salario total é de: ",salario_total, " R$ pois o trabalhador excedeu as horas trabalhadas em ",excesso,", portanto ele ganhou ", salario_excedente, " R$ a mais")
+		}
+		senao{
+			salario_total = horas_trabalhadas*salario_hora
+			escreva("O salário total do trabalhador será: ",salario_total)
+		}
+*/
+/* ============ 3 ===========	
+ 		//messagem
+		escreva("Digite o valor de 4 número e eu lhe direi o quadrado de seus valores \n")
+		//input values
+		escreva("Primeiro número: \n")
+		leia(n1)
+		escreva("Segundo número: \n")
+		leia(n2)
+		escreva("Terceiro número: \n")
+		leia(n3)
+		escreva("Quarto número: \n")
+		leia(n4)
+		
+		//calc potencia
+		valor1 = mat.potencia(n1, 2.0)
+		valor2 = mat.potencia(n2, 2.0)
+		valor3 = mat.potencia(n3, 2.0)
+		valor4 = mat.potencia(n4, 2.0)
+
+		//condicao para pausa programa
+		se (valor3 >= 1000){
+			escreva("Valor excedido")
+		}
+		//imprimindo resultados
+		senao{
+			escreva("Os valores lidos foram respectivamente: (",n1,") (",n2,") (",n3,") (",n4,") e seus quadrados respectivamente foram: (",valor1,") (",valor2,") (",valor3,") (",valor4,")")
+		}
+*/	
